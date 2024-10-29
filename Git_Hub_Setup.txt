@@ -1,0 +1,52 @@
+========================================Step 1: Set Up Git on Your Computer========================================
+Download Git: If Git isn't installed, download and install it from git-scm.com.
+Set up Git with your name and email:
+
+$git config --global user.name "Your Name"
+$git config --global user.email "your_email@example.com"
+========================================Step 2: Create a GitHub Account (if not already done)========================================
+Sign up at GitHub.
+Verify your email to access all GitHub features.
+========================================Step 3: Create a New Repository on GitHub========================================
+Go to GitHub and sign in.
+Click on New (usually found on the main page or at the top right corner).
+Enter the repository name and description (optional).
+Choose visibility: Public (anyone can see it) or Private (only you and collaborators can see it).
+Do not check "Initialize this repository with a README" for this tutorial.
+Click Create repository.
+========================================Step 4: Initialize the Local Git Repository========================================
+Open a terminal or command prompt.
+Navigate to your project folder:
+
+$cd path/to/your/project
+Initialize Git in this folder:
+
+$git init
+========================================Step 5: Link Local Repository to GitHub Repository========================================
+Copy the GitHub repository URL from the repository page (under the "Code" button).
+In the terminal, add this URL as the remote origin:
+bash
+Copy code
+git remote add origin <GitHub-repo-URL>
+========================================Step 6: Add Files to the Staging Area========================================
+Check which files are ready to be added by typing:
+
+$git status
+Add all files in the folder to the staging area:
+
+$git add .
+
+Alternatively, you can add specific files with git add filename.
+========================================Step 7: Commit Your Changes========================================
+Commit the added files with a message:
+
+$git commit -m "Initial commit"
+========================================Step 8: Push Your Code to GitHub========================================
+Push the code to GitHub:
+
+$git push -u origin main
+
+If your branch is called master, use git push -u origin master.
+Enter your GitHub credentials if prompted.
+========================================Step 9: Verify on GitHub========================================
+Go back to the GitHub repository page and refresh. You should see your code in the repository!
